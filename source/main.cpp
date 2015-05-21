@@ -66,7 +66,7 @@ int main(int argc, char **argv) {
     const string credit = "by felipejfc";
     gpuClear();
     gputDrawString(title, (gpuGetViewportWidth() - gputGetStringWidth(title, 10)) / 2, (gpuGetViewportHeight() - gputGetStringHeight(title, 10))/2, 10, 10, 0, 0, 0);
-    gputDrawString(credit, (gpuGetViewportWidth() - gputGetStringWidth(title, 8)) / 2, (gpuGetViewportHeight() - gputGetStringHeight(title, 8))/2 - 50, 8, 8, 0, 0, 0);
+    gputDrawString(credit, (gpuGetViewportWidth() - gputGetStringWidth(credit, 8)) / 2, (gpuGetViewportHeight() - gputGetStringHeight(credit, 8))/2 - 50, 8, 8, 0, 0, 0);
     gputDrawString(str, (gpuGetViewportWidth() - gputGetStringWidth(str, 8)) / 2, (gpuGetViewportHeight() - gputGetStringHeight(str, 8))/2 - 100, 8, 8, 0, 0, 0);
     gpuFlush();
     gpuFlushBuffer();
